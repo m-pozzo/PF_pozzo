@@ -8,7 +8,7 @@
 /* navbar */
 
 .navbar {
-  background-color: #bad;
+  background-color: #778;
 }
 
 .navbar-logo {
@@ -28,8 +28,8 @@
 
 /* BACKGROUND */
 
-.backrground-img {
-  background-image: ./img/;
+.background-img {
+  background-image: url(/img/20230223_134319_0000.png);
 }
 
 /* MAIN */
@@ -40,35 +40,46 @@
   align-items: center;
 }
 
-.main_article {
-  
-}
-
 .main_p {
   text-align: center;
   font-size: 15px;
+  margin-top: 10px;
 }
 
 .main_titulo {
   text-align: center;
   margin: 10px 0px;
+  font-size: 2vh;
 }
 
 .info-container {
-  border: 1px solid black;
+  border: 1px solid #bbf;
   border-radius: 2px;
-  width: 350px;
-  height: 350px;
+  height: 400px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  background-color: #bbf;
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
 }
 
+.reserva {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 3px;
+  padding: 3px;
+  margin-top: 6px;
+  text-decoration: none;
+  color: #67d;
+  display: inline-block;
+}
 
-
-.main_img {
-  width: 80%;
-  height: 14rem;
+#main_img {
+  width: 70vw;
+  height: 20vh;
   margin-top: 8px;
   margin-bottom: 6px;
   border-radius: 3px;
@@ -79,6 +90,7 @@
 .wp {
   width: 3rem;
   height: 3rem;
+  display: none;
 }
 
 .wp-container {
@@ -89,37 +101,49 @@
 /* PODCAST */
 
 .podcast {
-  display: flex;
-  flex-flow: column nowrap;
+  width: 100vw;
+}
+
+.article-podcast {
   align-items: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
-.socialmedia {
-  width: 5rem;
-  height: 5rem;
+.iframe-podcast
+{
+  width: 80vw;
+  height: 25vh;
 }
 
-.yt {
-  width: 5rem;
-  height: 5rem;
+/* VIDEO YT */
+
+.video-yt {
+  padding-bottom: 20px; 
+  text-align: center;
+  width: 100vw;
 }
 
-.footer_logo {
-  width: 5rem;
-  height: 5rem;
+.iframe-yt {
+  width: 80vw;
+  height: 25vh;
 }
 
 /* FOOTER */
 
-.footer {
+#footer {
   display: flex;
-  flex-flow: row; 
+  flex-flow: column; 
+  background-color: #778;
+  height: 100%;
 }
 
 .footer-ul {
   display: flex;
   flex-flow: row; 
   align-content: center;
+  justify-content: space-evenly;
 }
 
 .footer_ul-li {
@@ -128,8 +152,22 @@
 
 #copyright {
   text-align: center;
+  color: white;
+  font-size: 2vh;
 }
 
 .footer_logo {
   display: none;
+}
+
+.socialmedia {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 5px;
+}
+
+.yt {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 5px;
 }
