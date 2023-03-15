@@ -1,0 +1,118 @@
+.background-img1 {
+    background-image: url(/img/20230223_134319_0000.png);
+    
+  }
+
+.titulo {
+    margin: 10px;
+}
+
+.grid-container-lecturas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.flexbox-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boton-pay {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    margin-top: 6px;
+    border-radius: 6px;
+    padding: 1px;
+    background-color: #eee;
+    color: #22e;
+    border-color: #55b;
+    transition: color 0.2s, background-color 0.2s, width 0.2s, height 0.2s;
+    &:hover{
+        background-color: #69d;
+        color: #fff;
+        width: 260px;
+        height: 40px;
+    }
+}
+
+.boton-flex {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lectura-img {
+    min-height: 200px;
+    max-height: 300px;
+    width: 200px;
+}
+
+.precio_tiradas {
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000;
+}
+
+.info-producto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    background-color: #99b;
+    padding: 5px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.metodos-de-pago {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+@media (max-width: 1050px){
+    .grid-container-lecturas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .grid-card {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        padding: 16px;
+        margin: 0px 20px 20px 20px;
+        text-align: center;
+        background-color:  #ddd;
+        border-radius: 8px;
+    }
+    .lectura-img {
+        width: 20rem;
+        height: 40rem;
+    }
+    .info-producto {
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+    .precio_tiradas {
+        font-size: 6rem;
+    }
+}
+

@@ -1,0 +1,48 @@
+.info-center {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.titulo-info {
+  text-align: center;
+}
+
+.info_container {
+  margin-top: 20px;
+}
+
+.btn-enviar {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: #bbf;
+  background-color: #aaf;
+  height: 40px;
+  width: 300px;
+  color: #fff;
+  text-decoration: solid;
+}
+
+.btn-s-container {
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+  .titulo {
+    text-align: center;
+  }
+
+  .btn-s-container {
+    text-align: center;
+  }
+
+  .btn-enviar {
+    text-align: center;
+    height: 40px;
+    width: 150px;
+  }
+}

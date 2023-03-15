@@ -1,0 +1,56 @@
+.img-combos {
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    border: solid 2px #77f;
+}
+
+.combo-container {
+    background-color: #bbf;
+    padding: 30px 0px 20px 0px;
+    border-radius: 10px;
+    border: solid 2px #77f;
+}
+
+.text-combos-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.info-combo {
+    margin-top: 10px;
+    background-color: #77f;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.10rem;
+    padding: 3px;
+}
+
+.textos-combo {
+    padding-bottom: 50px;
+}
+
+.precio-combo {
+    font-size: 3rem;
+}
+
+.desc-combo {
+    font-size: 1.25rem;
+}
+
+.flex-img-info-container {
+    margin-left: 20px;
+}
+
+@media (max-width: 762px) {
+    .boton-flex {
+        text-align: center;
+    }
+    .text-combos-container{
+        text-align: center;
+    }
+}
