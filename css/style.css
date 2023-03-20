@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  background-color: #778;
+  background-image: linear-gradient(to bottom, #67d, #88f);
 }
 
 .navbar-logo {
@@ -29,14 +29,44 @@
 
 .main_titulo {
   text-align: left;
-  margin: 10px 0px;
+  margin: 14px 10px;
+  padding: 5px;
   font-size: 3rem;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.grid-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.33fr 0.33fr 0.33fr;
+  background-image: linear-gradient(to left, #67d, #bbf);
+  margin: 15px;
+  padding: 10px;
+}
+
+.flex-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_img {
+  width: 22rem;
+  height: 19rem;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.main_p a {
+  text-decoration: none;
 }
 
 .wp {
-  width: 3rem;
-  height: 3rem;
-  display: none;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
 }
 
 .wp-container {
@@ -48,6 +78,7 @@
   border-radius: 15px;
   height: 40vh;
   width: 80vw;
+  margin-bottom: 20px;
 }
 
 #footer {
@@ -55,7 +86,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: space-around;
-  background-color: #778;
+  background-image: linear-gradient(to top, #67d, #88f);
   height: 25vh;
   padding-top: 10px;
 }
