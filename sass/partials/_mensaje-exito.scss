@@ -1,0 +1,50 @@
+.exito-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.exito {
+    font-size: 2.50rem;
+    color: #ae6;
+}
+
+.btn-inicio {
+    margin-top: 60px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #bbf;
+    background-color: #aaf;
+    height: 60px;
+    width: 300px;
+    color: #fff;
+    text-decoration: solid;
+    font-size: 1.5rem;
+} 
+
+.btn-inicio-container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 380px) {
+    .btn-inicio {
+        margin-top: 60px;
+        padding: 5px;
+        border-radius: 10px;
+        border-color: #bbf;
+        background-color: #aaf;
+        height: 60px;
+        width: 150px;
+        color: #fff;
+        text-decoration: solid;
+        font-size: 1rem;
+    } 
+}
+
+.exito {
+    font-size: 1.75rem;
+    color: #ae6;
+}

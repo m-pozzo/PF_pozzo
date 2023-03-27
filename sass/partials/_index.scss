@@ -1,7 +1,7 @@
 @use './vars';
 
 .navbar {
-    background-image: linear-gradient(to bottom, vars.$s-color, #89f);
+    background-image: linear-gradient(to right, #1e132b, #212922);
 }
 
 .navbar-logo {
@@ -17,83 +17,95 @@
 .navbar-nav {
     display: flex;
     justify-content: end;
-
 }
-
 
 .nav-link {
     align-items: end;
+    color: #FFFFFF;
+
+    &:active {
+        background-color: #ccf;
+        border-radius: 16px;
+    }
+
+    &:hover {
+        background-color: #ccf;
+        border-radius: 6px;
+    }
 }
 
-.main_titulo {
-    text-align: left;
-    margin: 14px 10px;
-    padding: 5px;
-    font-size: 3rem;
-    background-color: #fff;
-    display: inline-block;
-    font-family: 'Cinzel', serif;
+.navbar-toggler {
+    border-color: #fff;
+}
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .grid-info-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.33fr 0.33fr 0.33fr;
-    // background-image: linear-gradient(to left, vars.$s-color, vars.$t-color);
-    margin: 15px;
-    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     border-radius: 24px;
-    // border: #fff solid 2px;
 }
-
-.flex-info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: #fff solid 1px;
-}
-
 
 .main_img {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 400px;
     padding: 10px;
     border-radius: 20px;
 }
 
-.main_p_f {
+.main_h4 {
+    margin-bottom: 40px;
+    padding: 10px 0 10px 0;
+    font-size: 2.5rem;
+    border: solid 2px #fff;
+    background-color: #333;
+    border-radius: 6px;
+
     a {
         text-decoration: none;
+        color: #fff;
     }
+}
+
+.main_p_f {
+    color: #FFF;
+    font-size: 1.2rem;
 }
 
 .main_p_s {
-    a {
-        text-decoration: none;
-    }
+    color: #FFF;
+    font-size: 1.2rem;
 }
 
 .main_p_t {
-    a {
-        text-decoration: none;
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+.reserva {
+    text-decoration: none;
+    color: #fff;
+    border: solid 2px #fff;
+    background-color: #333;
+    border-radius: 6px;
+    padding: 0 4px 4px 4px;
+    transition: all 0.25s;
+
+    &:hover {
+        background-color: #999;
+        color: #111;
     }
 }
 
-.wp {
-    width: 69px;
-    height: 69px;
-    margin: 18px;
-}
-
-.wp-container {
-    float: right;
-    position: fixed;
-    width: 100vw;
-    text-align: end;
-    z-index: 100;
+.article-podcast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
 }
 
 .iframe-yt {
@@ -103,12 +115,17 @@
     margin-bottom: 20px;
 }
 
+.iframe-podcast {
+    height: 200px;
+    width: 350px;
+}
+
 #footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: space-around;
-    background-image: linear-gradient(to top, vars.$s-color, #89f);
+    background-image: linear-gradient(to right, #1e132b, #212424);
     height: 25vh;
     padding-top: 10px;
 }
@@ -127,7 +144,6 @@
     align-content: center;
     justify-content: space-around;
     padding-top: 20px;
-    z-index: 150;
 }
 
 .footer_ul-li {
@@ -142,10 +158,6 @@
     padding-top: 80px;
 }
 
-.copyright-container {
-    z-index: 1000;
-}
-
 .footer_logo {
     width: 5.5rem;
     height: 5.5rem;
@@ -156,4 +168,242 @@
     width: 2.2rem;
     height: 2.2rem;
     margin-top: 5px;
+}
+
+.h3_iframe {
+    font-size: 3rem;
+}
+
+
+@media (max-width: 576px) {
+    .footer_logo {
+        display: none;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    #copyright {
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .footer-ul {
+        padding-left: 0;
+    }
+
+    .main_titulo {
+        text-align: center;
+        padding: 5px;
+        margin: 10px 0 0 10px;
+        font-size: 4rem;
+        display: inline-block;
+        font-family: 'Bigelow Rules';
+    }
+
+    .main_img {
+        width: 275px;
+        height: 275px;
+    }
+
+    .main_h4 {
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 8px;
+        padding: 10px 0 10px 0;
+        font-size: 1.5rem;
+        border: solid 2px #fff;
+        background-color: #333;
+        border-radius: 6px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    .flex-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #555;
+        margin-top: 10px;
+        border-radius: 15px;
+        margin: 10px 10px;
+    }
+
+    .iframe-yt {
+        border-radius: 15px;
+        height: 40vh;
+        width: 70vw;
+        margin-bottom: 30px;
+    }
+
+    .iframe-podcast {
+        height: 200px;
+        width: 350px;
+        padding-top: 30px;
+    }
+
+    .h3_iframe {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .footer_logo {
+        display: none;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+    }
+
+    #copyright {
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    .footer-ul {
+        padding-left: 0;
+    }
+
+    .main_titulo {
+        text-align: center;
+        padding: 5px;
+        margin: 10px 0 0 10px;
+        font-size: 5rem;
+        display: inline-block;
+        font-family: 'Bigelow Rules';
+    }
+
+    .main_h4 {
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 8px;
+        padding: 10px 0 10px 0;
+        font-size: 2rem;
+        border: solid 2px #fff;
+        background-color: #333;
+        border-radius: 6px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    .flex-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #555;
+        margin-top: 10px;
+        border-radius: 15px;
+        margin: 10px 10px;
+    }
+
+    .iframe-yt {
+        border-radius: 15px;
+        height: 70vh;
+        width: 70vw;
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+
+    .iframe-podcast {
+        width: 70vw;
+        height: 50vh;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-around;
+        background-color: vars.$f-color;
+        height: 20vh;
+        padding-top: 10px;
+    }
+
+    .footerlogo-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 15px;
+
+    }
+
+    .footer-ul {
+        display: flex;
+        flex-flow: row;
+        align-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+
+    .footer_ul-li {
+        list-style: none;
+        padding: 0;
+    }
+
+    #copyright {
+        text-align: center;
+        color: #fff;
+        font-size: 2vh;
+        padding-top: 80px;
+    }
+
+    .footer_logo {
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 4px;
+        display: flex;
+    }
+
+    .socialmedia {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 5px;
+    }
+
+    .flex-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: #555;
+        margin-top: 10px;
+        border-radius: 15px;
+        border-color: #FFFFFF;
+
+    }
+
+    .main_titulo {
+        text-align: center;
+        padding: 5px;
+        margin: 10px 0 0 10px;
+        font-size: 6rem;
+        display: inline-block;
+        font-family: 'Bigelow Rules';
+    }
+
 }

@@ -17,8 +17,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inconsolata:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
     <!-- css MAIN -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -39,13 +38,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
                             <li class="nav-item">
-                                <a class="nav-link active" href="./index.html">Inicio</a>
+                                <a class="nav-link" href="./index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                                <a class="nav-link" aria-current="page" href="./pages/contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./pages/sobre-mi.html">Sobre mi</a>
+                                <a class="nav-link" href="./pages/sobre-mi.html">Sobre mi</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -73,71 +72,76 @@
             </nav>
         </header>
         <main class="main">
-            <h2 class="main_titulo">
-                INICIO
-            </h2>
-            <section class="container">
-                <article class="container grid-info-container">
+            <section class="titulo">
+                <h2 class="main_titulo">
+                    INICIO
+                </h2>
+            </section>
+            <section>
+                <article class="grid-info-container">
                     <!-- Primer anuncio -->
-                    <div class="flex-info-container img_container">
-                        <img class="main_img" src="./img/002.jpg" alt="Cartas-de-tarot">
-                    </div>
-                    <div class="flex-info-container">
-                        <p class="main_p_f">
-                            <a href="./pages/lecturas-de-tarot.html" class="reserva">RESERVÁ TU LECTURA</a>
-                        </p>
-                        <p class="main_p_f">
-                            Para aclarar tu mente, resolve todas tus dudas reservando ya mismo tu lectura
-                            haciendo click <a href="./pages/lecturas-de-tarot.html" class="reserva">ACÁ</a>
-                        </p>
+                    <div class="flex-card-container">
+                        <div class="img_container">
+                            <img class="main_img" src="./img/002.jpg" alt="Cartas-de-tarot">
+                        </div>
+                        <div>
+                            <h4 class="main_h4">
+                                <a href="./pages/lecturas-de-tarot.html">RESERVÁ TU LECTURA</a>
+                            </h4>
+                            <p class="main_p_f">
+                                Para aclarar tu mente, resolve todas tus dudas reservando ya mismo tu lectura
+                                haciendo click <a href="./pages/lecturas-de-tarot.html" class="reserva">ACÁ</a>
+                            </p>
+                        </div>
                     </div>
                     <!-- Segundo anuncio -->
-                    <div class="flex-info-container">
-                        <p class="main_p_s">
-                            <a href="./pages/lecturas-de-tarot.html" class="reserva">¿Quien está detras de todo
-                                esto?</a>
-                        </p>
-                        <p class="main_p_s">
-                            Para aclarar tu mente, resolve todas tus dudas reservando ya mismo tu lectura
-                            haciendo click <a href="./pages/lecturas-de-tarot.html" class="reserva">ACÁ</a>
-                        </p>
-                    </div>
-                    <div class="flex-info-container img_container">
-                        <img class="main_img" src="./img/006.jpg" alt="Cartas-de-tarot">
+                    <div class="flex-card-container">
+                        <div>
+                            <h4 class="main_h4">
+                                <a href="./pages/sobre-mi.html">¿Quien está detras de todo
+                                    esto?</a>
+                            </h4>
+                            <p class="main_p_s">
+                                Me llamo Yazmín, tengo 21 años y hace 5 años que estoy dentro del mundo del tarot. Si
+                                queres saber más sobre mi <a href="./pages/sobre-mi.html" class="reserva">toca acá</a>.
+                            </p>
+                        </div>
+                        <div class="img_container">
+                            <img class="main_img" src="./img/006.jpg" alt="Cartas-de-tarot">
+                        </div>
                     </div>
                     <!-- Tercer anuncio -->
-                    <div class="flex-info-container img_container">
-                        <img class="main_img" src="./img/001.jpg" alt="Cartas-de-tarot">
-                    </div>
-                    <div class="flex-info-container">
-                        <p class="main_p_t">
-                            <a href="./pages/lecturas-de-tarot.html" class="reserva">CANALIZACIONES</a>
-                        </p>
-                        <p class="main_p_t">
-                            Para aclarar tu mente, resolve todas tus dudas reservando ya mismo tu lectura
-                            haciendo click <a href="./pages/lecturas-de-tarot.html" class="reserva">ACÁ</a>
-                        </p>
+                    <div class="flex-card-container">
+                        <div class="img_container">
+                            <img class="main_img" src="./img/001.jpg" alt="Cartas-de-tarot">
+                        </div>
+                        <div>
+                            <h4 class="main_h4">
+                                <a href="./pages/lecturas-de-tarot.html">CANALIZACIONES</a>
+                            </h4>
+                            <p class="main_p_t">
+                                Estate atento a las nuevas novedades que se vienen. Cualquier duda o consulta anda a la
+                                pagina de <a href="./pages/contacto.html" class="reserva">contacto</a> y escribime por
+                                ahi
+                            </p>
+                        </div>
                     </div>
                 </article>
             </section>
         </main>
         <section>
-            <article class="wp-container sticky-bottom">
-                <a href="https://web.whatsapp.com/" target="_blank" class="wp"><img src="./img/socialmedia/whatsapp.png"
-                        alt="WhatasApp" class="wp sticky-bottom"></a>
-            </article>
         </section>
-        <section class="iframes container text-center">
-            <article class="article-podcast">
-                <h3>Podcast disponible en <span>Spotify</span></h3>
-                <iframe class="iframe-podcast" style="border-radius:12px;width: 40vw;height: 20vh;overflow: hidden;"
+        <section class="iframes">
+            <article class="article-podcast container text-center">
+                <h3 class="h3_iframe">Podcast disponible en <span class="span_spotify">Spotify</span></h3>
+                <iframe class="iframe-podcast"
                     src="https://open.spotify.com/embed/episode/3KoVrpXhmgzXpM2ddG0gWs?utm_source=generator"
                     frameBorder="0" allowfullscreen=""
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
             </article>
-            <article class="video-yt">
-                <h3>Mas videos proximamente</h3>
+            <article class="video-yt text-center container">
+                <h3 class="h3_iframe">Mas videos proximamente</h3>
                 <iframe class="iframe-yt" src="https://www.youtube.com/embed/_sEW8Fpt8ds" title="YouTube video player"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
