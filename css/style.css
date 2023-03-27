@@ -227,6 +227,7 @@
     margin-top: 10px;
     border-radius: 15px;
     margin: 10px 10px;
+    border: 3px solid #361559;
   }
   .iframe-yt {
     border-radius: 15px;
@@ -527,7 +528,7 @@
 }
 
 .combo-container {
-  background-color: #bbf;
+  background-color: #1e132b;
   padding: 30px 0px 20px 0px;
   border-radius: 10px;
   border: solid 2px #77f;
@@ -543,8 +544,9 @@
 
 .info-combo {
   margin-top: 10px;
-  background-color: #77f;
+  background-color: #333;
   text-align: center;
+  border: #1200fd;
   border-radius: 5px;
   color: #fff;
   font-size: 1.1rem;
@@ -554,11 +556,13 @@
 .precio-combo {
   font-size: 3rem;
   font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
 }
 
 .desc-combo {
   font-size: 1.25rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #fff;
 }
 
 .flex-img-info-container {
@@ -567,7 +571,8 @@
 
 @media (max-width: 400px) {
   .img-combos {
-    width: 100%;
+    width: 200px;
+    height: 200px;
     text-align: center;
     padding: 0;
   }
@@ -603,8 +608,9 @@
   padding: 16px;
   margin: 0px 20px 20px 20px;
   text-align: center;
-  background-color: #333;
+  background-color: #1e132b;
   border-radius: 8px;
+  border: 3px solid #ddd;
 }
 
 .flexbox-info {
@@ -624,11 +630,11 @@
   padding: 1px;
   background-color: #eee;
   color: #22e;
-  border-color: #55b;
+  border-color: #559;
   transition: color 0.2s, background-color 0.2s, width 0.2s, height 0.2s;
 }
 .boton-pay:hover {
-  background-color: #69d;
+  background-color: #120175;
   color: #fff;
   width: 260px;
   height: 40px;
@@ -673,20 +679,17 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin: 20px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    justify-content: space-between;
   }
   .grid-card {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 16px;
-    margin: 0px 20px 20px 20px;
     text-align: center;
-    background-color: #333;
+    background-color: #1e132b;
     border-radius: 8px;
   }
   .precio_tiradas {

@@ -23,8 +23,9 @@
     padding: 16px;
     margin: 0px 20px 20px 20px;
     text-align: center;
-    background-color: #333;
+    background-color: #1e132b;
     border-radius: 8px;
+    border: 3px solid #ddd;
 }
 
 .flexbox-info {
@@ -44,11 +45,11 @@
     padding: 1px;
     background-color: #eee;
     color: #22e;
-    border-color: #55b;
+    border-color: #559;
     transition: color 0.2s, background-color 0.2s, width 0.2s, height 0.2s;
 
     &:hover {
-        background-color: #69d;
+        background-color: #120175;
         color: #fff;
         width: 260px;
         height: 40px;
@@ -94,9 +95,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        margin: 20px;
-        margin-top: 70px;
-        margin-bottom: 70px;
+        justify-content: space-between;
+        // margin: 20px;
+        // margin-top: 70px;
+        // margin-bottom: 70px;
     }
 
     .grid-card {
@@ -104,11 +106,10 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 16px;
-        margin: 0px 20px 20px 20px;
         text-align: center;
-        background-color: #333;
+        background-color: #1e132b;
         border-radius: 8px;
     }
 

@@ -6,7 +6,7 @@
 }
 
 .combo-container {
-    background-color: #bbf;
+    background-color: #1e132b;
     padding: 30px 0px 20px 0px;
     border-radius: 10px;
     border: solid 2px #77f;
@@ -23,26 +23,25 @@
 
 .info-combo {
     margin-top: 10px;
-    background-color: #77f;
+    background-color: #333;
     text-align: center;
+    border: #1200fd;
     border-radius: 5px;
     color: #fff;
     font-size: 1.10rem;
     padding: 3px;
 }
 
-// .textos-combo {
-//     padding-bottom: 50px;
-// }
-
 .precio-combo {
     font-size: 3rem;
     font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
 }
 
 .desc-combo {
     font-size: 1.25rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
 }
 
 .flex-img-info-container {
@@ -51,7 +50,8 @@
 
 @media (max-width: 400px) {
     .img-combos {
-        width: 100%;
+        width: 200px;
+        height: 200px;
         text-align: center;
         padding: 0;
     }
