@@ -531,6 +531,7 @@
   padding: 30px 0px 20px 0px;
   border-radius: 10px;
   border: solid 2px #77f;
+  margin: 30px;
 }
 
 .text-combos-container {
@@ -550,22 +551,27 @@
   padding: 3px;
 }
 
-.textos-combo {
-  padding-bottom: 50px;
-}
-
 .precio-combo {
   font-size: 3rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .desc-combo {
   font-size: 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .flex-img-info-container {
   margin-left: 20px;
 }
 
+@media (max-width: 400px) {
+  .img-combos {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
 @media (max-width: 762px) {
   .boton-flex {
     text-align: center;
@@ -597,7 +603,7 @@
   padding: 16px;
   margin: 0px 20px 20px 20px;
   text-align: center;
-  background-color: #ddd;
+  background-color: #333;
   border-radius: 8px;
 }
 
@@ -634,19 +640,20 @@
 }
 
 .lectura-img {
-  min-height: 200px;
-  max-height: 300px;
-  width: 200px;
+  width: 100%;
+  height: 70%;
+  border-radius: 9px;
+  border: #fff 2px solid;
 }
 
 .precio_tiradas {
-  font-size: 4rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #000;
+  font-size: 3.3rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
 }
 
 .info-producto {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: oblique;
   background-color: #99b;
   padding: 5px;
@@ -657,36 +664,56 @@
 
 .metodos-de-pago {
   font-size: 1.5rem;
-  color: #000;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 528px) {
   .grid-container-lecturas {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    align-items: center;
+    margin: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
   .grid-card {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
     padding: 16px;
     margin: 0px 20px 20px 20px;
     text-align: center;
-    background-color: #ddd;
+    background-color: #333;
     border-radius: 8px;
   }
-  .lectura-img {
-    width: 20rem;
-    height: 40rem;
+  .precio_tiradas {
+    font-size: 2.5rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
   }
-  .info-producto {
-    margin-top: 15px;
-    font-size: 1.5rem;
+  .lectura-img {
+    width: 90%;
+    height: 50%;
+    border-radius: 9px;
+    border: #fff 2px solid;
+  }
+}
+@media (max-width: 1030px) {
+  .grid-container-lecturas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
   .precio_tiradas {
-    font-size: 6rem;
+    font-size: 2.5rem;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
   }
 }
 .exito-flex {
