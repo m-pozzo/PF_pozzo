@@ -14,12 +14,23 @@
 .btn-enviar {
   padding: 5px;
   border-radius: 10px;
-  border-color: #bbf;
-  background-color: #aaf;
+  background-color: #1e132b;
   height: 40px;
   width: 300px;
   color: #fff;
   text-decoration: solid;
+
+  &:hover {
+    background-color: #432367;
+    color: #fff;
+    border: solid 2px #8860c0;
+  }
+
+  &:active {
+    background-color: #38244e;
+    color: #aaa;
+    border: solid 2px #654a8b;
+  }
 }
 
 .btn-s-container {
@@ -29,6 +40,44 @@
 .form-control {
   margin-bottom: 30px;
   margin-top: 10px;
+}
+
+#instagram-contacto {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.info-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.form-info {
+  margin-top: 10px;
+}
+
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #654a8b;
+  color: #ffffff;
+  width: 400px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+@media (max-width: 415px) {
+  .contacto-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #654a8b;
+    color: #ffffff;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
 }
 
 @media (max-width: 720px) {
