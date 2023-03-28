@@ -60,8 +60,7 @@
     margin-bottom: 40px;
     padding: 10px 0 10px 0;
     font-size: 2.5rem;
-    border: solid 2px #fff;
-    background-color: #1e132b;
+    background-color: #242537;
     border-radius: 6px;
 
     a {
@@ -88,16 +87,14 @@
 .reserva {
     text-decoration: none;
     color: #fff;
-    border: solid 2px #6e37ba;
-    background-color: #1e132b;
+    background-color: #242537;
     border-radius: 6px;
     padding: 0 4px 4px 4px;
     transition: all 0.25s;
 
     &:hover {
-        background-color: #432367;
+        background-color: #444557;
         color: #fff;
-        border: solid 2px #8860c0;
     }
 }
 
@@ -223,8 +220,7 @@
         margin-top: 8px;
         padding: 10px 0 10px 0;
         font-size: 1.5rem;
-        border: solid 2px #fff;
-        background-color: #333;
+        background-color: #1e132b;
         border-radius: 6px;
 
         a {
@@ -395,10 +391,9 @@
         flex-direction: row;
         justify-content: space-evenly;
         text-align: center;
-        background-color: #555;
+        background-color: #6C718E;
         margin-top: 10px;
         border-radius: 15px;
-        border-color: #FFFFFF;
 
     }
 
@@ -406,9 +401,9 @@
         text-align: center;
         padding: 5px;
         margin: 10px 0 0 10px;
-        font-size: 6rem;
+        font-size: 3rem;
         display: inline-block;
-        font-family: 'Bigelow Rules';
+        font-family: 'Crimson Text', serif;
     }
 
 }
