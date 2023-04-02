@@ -14,7 +14,7 @@ $asunto = 'Mensaje de muyuraniana.com';
 
 mail($destinatario, $asunto, utf8_decode($mensaje);
 
-header("mensaje-exito.html");
+header();
 exit();
 
 ?>
