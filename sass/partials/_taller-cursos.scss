@@ -1,70 +1,20 @@
-.img-combos {
-    width: 300px;
-    height: 300px;
-    border-radius: 3px;
-    border: solid 2px #77f;
-}
-
-.combo-container {
-    background-color: #1e132b;
-    padding: 30px 0px 20px 0px;
-    border-radius: 10px;
-    border: solid 2px #77f;
-    margin: 30px;
-}
-
-.text-combos-container {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
-.info-combo {
-    margin-top: 10px;
-    background-color: #333;
-    text-align: center;
-    border: #1200fd;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1.10rem;
-    padding: 3px;
-}
-
-.precio-combo {
+.progreso {
+    display: inline-block;
     font-size: 3rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #fff;
+    background-color: #FFF212;
+    margin: 40px 0 40px 0;
+    padding: 18px;
+    border: 2px solid #111111;
+    border-radius: 7px;
 }
 
-.desc-combo {
-    font-size: 1.25rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #fff;
+.progreso-p {
+    font-family: sans-serif;
 }
 
-.flex-img-info-container {
-    margin-left: 20px;
-}
-
-@media (max-width: 400px) {
-    .img-combos {
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        padding: 0;
-    }
-
-    
-}
-
-@media (max-width: 762px) {
-    .boton-flex {
-        text-align: center;
-    }
-
-    .text-combos-container {
-        text-align: center;
+@media (max-width: 576px){
+    .progreso {
+        margin: 30px;
+        font-size: 2rem;
     }
 }

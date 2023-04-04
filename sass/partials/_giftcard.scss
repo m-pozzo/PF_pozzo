@@ -1,7 +1,11 @@
+.card-container {
+  margin-bottom: 30px;
+}
 
 .giftcard-info {
     background-color: #ddd;
     padding: 15px;
+    margin-bottom: 20px;
   }
   
   .boton {
@@ -17,4 +21,71 @@
     display: flex;
     justify-content: space-around;
     margin-top: 10px
+  }
+
+
+@media (max-width: 570px){
+  .boton-pay-gift {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    margin-top: 6px;
+    border-radius: 6px;
+    padding: 1px;
+    background-color: #eee;
+    color: #22e;
+    border-color: #559;
+    transition: color 0.2s, background-color 0.2s, width 0.2s, height 0.2s;
+
+    &:hover {
+        background-color: #120175;
+        color: #fff;
+        width: 220px;
+        height: 40px;
+    }
+}
+}
+
+  @media (min-width: 575px){
+    .boton-pay-gift {
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      margin-top: 6px;
+      border-radius: 6px;
+      padding: 1px;
+      background-color: #eee;
+      color: #22e;
+      border-color: #559;
+      transition: color 0.2s, background-color 0.2s, width 0.2s, height 0.2s;
+  
+      &:hover {
+          background-color: #120175;
+          color: #fff;
+          width: 220px;
+          height: 40px;
+      }
+  }
+  }
+
+  @media (min-width: 768px){
+    .boton-pay-gift {
+      width: 200px;
+      height: 30px;
+      text-align: center;
+      margin-top: 6px;
+      border-radius: 6px;
+      padding: 1px;
+      background-color: #eee;
+      color: #22e;
+      border-color: #559;
+      transition: color 0.2s, background-color 0.2s, width 0.2s, height 0.2s;
+  
+      &:hover {
+          background-color: #120175;
+          color: #fff;
+          width: 220px;
+          height: 40px;
+      }
+  }
   }
