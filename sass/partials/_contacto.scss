@@ -3,49 +3,35 @@
   margin: 15px 0;
 }
 
-.titulo-info {
-  text-align: center;
-}
-
 .info_container {
   margin-top: 20px;
 }
 
 .btn-enviar {
-  padding: 5px;
-  border-radius: 10px;
-  background-color: #1e132b;
-  height: 40px;
+  background-color: #654a8b;
   width: 300px;
-  color: #fff;
-  text-decoration: solid;
-  transition: all 0.25s;
-
-  &:hover {
-    background-color: #432367;
-    color: #fff;
-    border: solid 2px #8860c0;
-  }
-
+  height: 40px;
   &:active {
-    background-color: #38244e;
+    background-color: #957cb0;
     color: #aaa;
-    border: solid 2px #654a8b;
   }
 }
 
 .btn-s-container {
   text-align: center;
+  font-family: 'Questrial', sans-serif;
 }
 
 .form-control {
   margin-bottom: 30px;
   margin-top: 10px;
+  font-family: 'Questrial', sans-serif;
 }
 
 #instagram-contacto {
-  text-decoration: none;
+  text-decoration: solid;
   color: #ffffff;
+  font-family: 'Questrial', sans-serif;
 }
 
 .info-flex {
@@ -53,20 +39,36 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.form-info {
-  margin-top: 10px;
+  justify-content: center;
 }
 
 .contacto-container {
   display: flex;
   flex-direction: column;
-  background-color: #654a8b;
+  background-color: rgba(180, 216, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3.5px);
   color: #ffffff;
   width: 400px;
-  margin-bottom: 10px;
+  margin: 30px 0;
+  padding: 15px;
   border-radius: 15px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.p_contacto_info {
+  margin: 10px 0;
+}
+
+.form-info {
+  text-align: center;
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+}
+
+.label {
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
 }
 
 @media (max-width: 415px) {

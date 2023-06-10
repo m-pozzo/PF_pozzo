@@ -16,7 +16,7 @@ $asunto = 'Mensaje de muyuraniana.com';
 
 mail($destinatario, $asunto, utf8_decode($mensaje));
 
-header('Location: ../pages/mensaje-exitoso.html');
+header('Location: mensaje-exitoso.html');
 exit;
 
 

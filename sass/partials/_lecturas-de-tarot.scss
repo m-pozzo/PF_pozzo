@@ -1,12 +1,3 @@
-.background-img1 {
-    background-image: url(/img/20230223_134319_0000.png);
-
-}
-
-.titulo {
-    margin: 10px;
-}
-
 .grid-container-lecturas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,13 +10,15 @@
 
 .grid-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.9fr 0.9fr;
     padding: 16px;
     margin: 0px 20px 20px 20px;
     text-align: center;
-    background-color: #1e132b;
+    background-color: rgba(180, 216, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3.5px);
     border-radius: 8px;
-    border: 3px solid #ddd;
+    font-family: 'Questrial', sans-serif;
 }
 
 .flexbox-info {
@@ -34,6 +27,7 @@
     justify-items: center;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Questrial', sans-serif;
 }
 
 .boton-pay {
@@ -43,16 +37,23 @@
     margin-top: 6px;
     border-radius: 6px;
     padding: 1px;
-    background-color: #eee;
-    color: #22e;
-    border-color: #559;
+    background-color: #1a033c;
+    color: #fff;
+    border-color: transparent;
     transition: color 0.2s, background-color 0.2s, width 0.2s, height 0.2s;
+    font-family: 'Questrial', sans-serif;
 
     &:hover {
-        background-color: #120175;
+        background-color: #450e9e;
         color: #fff;
         width: 260px;
         height: 40px;
+    }
+    &:active {
+        color: #8b43ff;
+        width: 260px;
+        height: 40px;
+        background-color: #c1c1c4;
     }
 }
 
@@ -62,32 +63,27 @@
 }
 
 .lectura-img {
-    width: 100%;
+    width: 80%;
     height: 70%;
     border-radius: 9px;
-    border: #fff 2px solid;
 }
 
-.precio_tiradas {
-    font-size: 3.3rem;
-    font-family: 'Source Sans Pro', sans-serif;
+.precio-tiradas {
+    font-size: 2.8rem;
     color: #fff;
 }
 
 .info-producto {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: oblique;
-    background-color: #333;
     padding: 5px;
     margin-top: 5px;
     border-radius: 8px;
     color: #fff;
+    font-size: 2.5rem;
 }
 
 .metodos-de-pago {
     font-size: 1.5rem;
     color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media (max-width: 528px) {
@@ -96,9 +92,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-content: space-between;
-        // margin: 20px;
-        // margin-top: 70px;
-        // margin-bottom: 70px;
     }
 
     .grid-card {

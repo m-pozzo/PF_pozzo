@@ -11,6 +11,7 @@
     border-radius: 10px;
     border: solid 2px #77f;
     margin: 30px;
+    font-family: 'Questrial', sans-serif;
 }
 
 .text-combos-container {
@@ -22,6 +23,7 @@
 }
 
 .info-combo {
+    width: 50%;
     margin-top: 10px;
     background-color: #333;
     text-align: center;
@@ -34,13 +36,11 @@
 
 .precio-combo {
     font-size: 3rem;
-    font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
 }
 
 .desc-combo {
     font-size: 1.25rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
 }
 
