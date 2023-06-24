@@ -1,15 +1,29 @@
 @use './vars';
-  .info {
-    text-align: center;
-  }
-  
-  .input {
-    margin-bottom: 9px;
-    background: transparent;
-    border-bottom: vars.$s-color;
-  }
-  
-  .link-pago {
-    text-decoration: none;
-    color: #117;
-  }
+
+.info {
+  text-align: center;
+}
+
+.info_container {
+  background-color: rgba(180, 216, 255, 0.1);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3.5px);
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+}
+
+.link-pago {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+}
+
+.metodos-de-pago {
+  display: flex;
+  flex-direction: column;
+}
+
+.metodo-de-pago {
+  color: #fff;
+  font-size: 1.2rem;
+}

@@ -57,7 +57,7 @@
                                             tarot</a>
                                     </li>
                                     <li><a class="dropdown-item" href="../pages/taller-cursos.html">Talleres y cursos
-                                            </a></li>
+                                        </a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -76,11 +76,16 @@
             <section>
                 <img src="../img/cabeceras/contacto.png" alt="Contacto page" class="cabecera">
                 <article class="grid-container container">
+                    <p class="form-info">
+                        Si tenes alguna duda sobre como reservar tu lectura, como funcionan las sesiones o por
+                        colaboraciones, completa el formulario y sera respondido lo antes posible.
+                        <!-- HACER LA LETRA MAS OPACA -->
+                    </p>
                     <form class="contactform" action="../php/contacto.php" method="post">
                         <div>
                             <labe class="label"><strong>Nombre</strong></label>
-                            <input class="form-control" type="text" placeholder="Nombre"
-                                aria-label="default input example" name="nombre">
+                                <input class="form-control" type="text" placeholder="Nombre"
+                                    aria-label="default input example" name="nombre">
                         </div>
                         <div>
                             <label class="label"><strong>Apellido</strong></label>
@@ -88,19 +93,17 @@
                                 aria-label="default input example" name="apellido">
                         </div>
                         <div class="mb-3 input">
-                            <label for="exampleFormControlInput1" class="form-label label"><strong>Correo electronico</strong></label>
+                            <label for="exampleFormControlInput1" class="form-label label"><strong>Correo
+                                    electronico</strong></label>
                             <input type="email" class="form-control" id="exampleFormControlInput1"
                                 placeholder="name@example.com" name="email">
                         </div>
                         <div class="mb-3 input">
-                            <label for="exampleFormControlTextarea1" class="form-label label"><strong>Asunto</strong></label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                name="text-area" placeholder="Asunto"></textarea>
+                            <label for="exampleFormControlTextarea1"
+                                class="form-label label"><strong>Asunto</strong></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text-area"
+                                placeholder="Asunto"></textarea>
                         </div>
-                        <p class="form-info">
-                            Este formulario esta destinado para propuestas y/o mensajes de cualquier
-                            tipo.
-                        </p>
                         <div class="btn-s-container">
                             <button type="submit" name="Enviar" class="btn-enviar reserva">Enviar</button>
                         </div>

@@ -394,15 +394,28 @@
   text-align: center;
 }
 
-.input {
-  margin-bottom: 9px;
-  background: transparent;
-  border-bottom: #67d;
+.info_container {
+  background-color: rgba(180, 216, 255, 0.1);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3.5px);
+  color: #fff;
+  font-family: "Questrial", sans-serif;
 }
 
 .link-pago {
   text-decoration: none;
-  color: #117;
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+}
+
+.metodos-de-pago {
+  display: flex;
+  flex-direction: column;
+}
+
+.metodo-de-pago {
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 .info-center {
@@ -469,6 +482,7 @@
 
 .form-info {
   text-align: center;
+  text-decoration: wavy;
   color: #fff;
   font-family: "Questrial", sans-serif;
 }
@@ -568,16 +582,91 @@
     display: block;
   }
 }
-.giftcard-info {
+.giftcard-explicacion {
   font-family: "Questrial", sans-serif;
   color: #fff;
 }
 
 .gift-container {
-  margin: 24px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 0.25fr);
+  gap: 10px;
+  display: flex;
+  justify-items: center;
   font-family: "Questrial", sans-serif;
 }
 
+.card {
+  max-width: 330px;
+  width: 100%;
+  background-color: rgba(180, 216, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(3.5px);
+}
+
+.card-img-top {
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+}
+
+.giftcard-info {
+  font-size: 1em;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.boton-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 612px) {
+  .gift-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .card {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 612px) {
+  .gift-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .card-title {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1080px) {
+  .gift-container {
+    display: grid;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-area: 1fr;
+    gap: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Questrial", sans-serif;
+    margin: 0 16px 0 16px;
+  }
+}
 .img-combos {
   width: 300px;
   height: 300px;
@@ -645,24 +734,27 @@
 }
 .grid-container-lecturas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 20px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(5, 0.9fr);
+  row-gap: 28px;
 }
 
 .grid-card {
   display: grid;
-  grid-template-columns: 0.9fr 0.9fr;
-  padding: 16px;
-  margin: 0px 20px 20px 20px;
-  text-align: center;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 33, 33%);
+  align-items: flex-end;
+  justify-items: center;
+  justify-self: center;
+  border-radius: 1px;
+  font-family: "Questrial", sans-serif;
+  transition: background-color 0.3s, scale 0.3s;
+}
+.grid-card:hover {
+  scale: 1.1;
   background-color: rgba(180, 216, 255, 0.1);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(3.5px);
-  border-radius: 8px;
-  font-family: "Questrial", sans-serif;
 }
 
 .flexbox-info {
@@ -675,7 +767,7 @@
 }
 
 .boton-pay {
-  width: 250px;
+  width: 210px;
   height: 30px;
   text-align: center;
   margin-top: 6px;
@@ -684,44 +776,44 @@
   background-color: #1a033c;
   color: #fff;
   border-color: transparent;
-  transition: color 0.2s, background-color 0.2s, width 0.2s, height 0.2s;
+  transition: color 0.12s, background-color 0.12s, scale 0.3s;
   font-family: "Questrial", sans-serif;
 }
 .boton-pay:hover {
-  background-color: #450e9e;
+  scale: 1.08;
+  background-color: #7536da;
   color: #fff;
-  width: 260px;
-  height: 40px;
 }
 .boton-pay:active {
-  color: #8b43ff;
-  width: 260px;
-  height: 40px;
-  background-color: #c1c1c4;
+  color: #ccc;
+  scale: 1.08;
+  background-color: #5b3c8c;
+  box-shadow: 0px 0px 5px #b564f3;
 }
 
 .boton-flex {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding-bottom: 16px;
 }
 
 .lectura-img {
-  width: 80%;
-  height: 70%;
-  border-radius: 9px;
+  width: 100%;
+  height: 70vh;
+  padding-bottom: 10px;
 }
 
 .precio-tiradas {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #fff;
+  margin: 0.01em;
 }
 
 .info-producto {
-  padding: 5px;
-  margin-top: 5px;
-  border-radius: 8px;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.1em;
 }
 
 .metodos-de-pago {
@@ -729,51 +821,30 @@
   color: #fff;
 }
 
-@media (max-width: 528px) {
-  .grid-container-lecturas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
-  }
-  .grid-card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 16px;
-    text-align: center;
-    background-color: #1e132b;
-    border-radius: 8px;
-  }
-  .precio_tiradas {
-    font-size: 2.5rem;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #fff;
-  }
-  .lectura-img {
-    width: 90%;
-    height: 50%;
-    border-radius: 9px;
-    border: #fff 2px solid;
-  }
+#verMas1, #verMas2, #verMas3, #verMas4, #verMas5 {
+  width: 140px;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: #4a09ac;
+  color: #fff;
+  border-color: transparent;
+  transition: color 0.12s, background-color 0.12s, scale 0.3s;
+  font-family: "Questrial", sans-serif;
 }
-@media (max-width: 1030px) {
-  .grid-container-lecturas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin: 20px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-  .precio_tiradas {
-    font-size: 2.5rem;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #fff;
-  }
+#verMas1:hover, #verMas2:hover, #verMas3:hover, #verMas4:hover, #verMas5:hover {
+  scale: 1.08;
+  background-color: #7a39cf;
+  color: #fff;
 }
+#verMas1:active, #verMas2:active, #verMas3:active, #verMas4:active, #verMas5:active {
+  color: #ccc;
+  scale: 1.08;
+  background-color: #5b3c8c;
+  box-shadow: 0px 0px 5px #b564f3;
+}
+
 .exito-flex {
   display: grid;
   grid-template-columns: 1fr;
