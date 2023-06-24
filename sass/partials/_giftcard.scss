@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .card-container {
   margin-bottom: 30px;
 }
@@ -6,19 +7,91 @@
     background-color: #ddd;
     padding: 15px;
     margin-bottom: 20px;
+=======
+.giftcard-explicacion {
+  font-family: 'Questrial', sans-serif;
+  color: #fff;
+}
+
+.gift-container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.25fr);
+  gap: 10px;
+  display: flex;
+  justify-items: center;
+  font-family: 'Questrial', sans-serif;
+}
+
+.card {
+  max-width: 330px;
+  width: 100%;
+  background-color: rgba(180, 216, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3.5px);
+}
+
+.card-img-top {
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+}
+
+.giftcard-info {
+  font-size: 1em;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.boton-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 612px){
+  .gift-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+>>>>>>> correcciones
   }
-  
-  .boton {
-    border-radius: 5px;
-    padding: 3px;
-    margin: 0 5px;
-    background-color: #aad;
-    color: #fff;
-    border: 2px #66f solid;
+  .card {
+    margin-top: 18px;
   }
-  
-  .col-sm-6 {
+}
+
+@media (min-width: 612px){
+  .gift-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1080px){
+  .gift-container {
+    display: grid;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-area: 1fr;
+    gap: 20px;
     display: flex;
+<<<<<<< HEAD
     justify-content: space-around;
     margin-top: 10px
   }
@@ -89,3 +162,13 @@
       }
   }
   }
+=======
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Questrial', sans-serif;
+    margin: 0 16px 0 16px
+  }
+}
+
+>>>>>>> correcciones

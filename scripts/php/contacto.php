@@ -1,3 +1,5 @@
+
+
 <?php 
 
 $nombre = $_POST['nombre'];
@@ -12,9 +14,10 @@ $mensaje .= "Asunto: " . $asunto;
 $destinatario = 'muyuraniana@gmail.com';
 $asunto = 'Mensaje de muyuraniana.com';
 
-mail($destinatario, $asunto, utf8_decode($mensaje);
+mail($destinatario, $asunto, utf8_decode($mensaje));
 
-header("mensaje-exito.html");
-exit();
+header('Location: mensaje-exitoso.html');
+exit;
+
 
 ?>

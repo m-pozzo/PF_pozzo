@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .progreso {
     display: inline-block;
     font-size: 3rem;
@@ -10,6 +11,52 @@
 
 .progreso-p {
     font-family: sans-serif;
+=======
+.img-combos {
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    border: solid 2px #77f;
+}
+
+.combo-container {
+    background-color: #1e132b;
+    padding: 30px 0px 20px 0px;
+    border-radius: 10px;
+    border: solid 2px #77f;
+    margin: 30px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.text-combos-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.info-combo {
+    width: 50%;
+    margin-top: 10px;
+    background-color: #333;
+    text-align: center;
+    border: #1200fd;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.10rem;
+    padding: 3px;
+}
+
+.precio-combo {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.desc-combo {
+    font-size: 1.25rem;
+    color: #fff;
+>>>>>>> correcciones
 }
 
 @media (max-width: 576px){
