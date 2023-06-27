@@ -1,23 +1,21 @@
 
 
 <?php 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    header('Location: mensaje-exitoso.html');
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $email = $_POST['email'];
+    $campoAsunto = $_POST['text-area'];
 
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$email = $_POST['email'];
-$asunto = $_POST['text-area'];
+    $mensaje = "Este mensaje fue enviado por " . $nombre . " " . $apellido . ",\n\r";
+    $mensaje .= "Su email es: " . $email . ",\n\r";
+    $mensaje .= "Asunto: " . $campoAsunto;
 
-$mensaje = "Este mensaje fue enviado por " . $nombre . " " . $apellido . ",\n\r";
-$mensaje .= "Su email es: " . $email . ",\n\r";
-$mensaje .= "Asunto: " . $asunto;
+    $destinatario = 'muyuraniana@gmail.com';
+    $asunto = 'Mensaje de muyuraniana.com';
 
-$destinatario = 'muyuraniana@gmail.com';
-$asunto = 'Mensaje de muyuraniana.com';
-
-mail($destinatario, $asunto, utf8_decode($mensaje));
-
-header('Location: mensaje-exitoso.html');
-exit;
-
-
+    mail($destinatario, $asunto, utf8_decode($mensaje));
+    exit;
+}
 ?>
